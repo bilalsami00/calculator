@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+                <div class="buttons">
+                    <button class="operator" onclick="clearDisplay()">C</button>
+                    <button class="operator" onclick="deleteLast()">←</button>
+                    <button class="operator" onclick="appendToDisplay(this.innerText)">%</button>
+                    <button class="operator" onclick="appendToDisplay(this.innerText)">/</button>
+                    <button onclick="appendToDisplay(this.innerText)">7</button>
+                    <button onclick="appendToDisplay(this.innerText)">8</button>
+                    <button onclick="appendToDisplay(this.innerText)">9</button>
+                    <button class="operator" onclick="appendToDisplay(this.innerText)">*</button>
+                    <button onclick="appendToDisplay(this.innerText)">6</button>
+                    <button onclick="appendToDisplay(this.innerText)">5</button>
+                    <button onclick="appendToDisplay(this.innerText)">4</button>
+                    <button class="operator" onclick="appendToDisplay(this.innerText)">+</button>
+                    <button onclick="appendToDisplay(this.innerText)">3</button>
+                    <button onclick="appendToDisplay(this.innerText)">2</button>
+                    <button onclick="appendToDisplay(this.innerText)">1</button>
+                    <button class="operator" onclick="appendToDisplay(this.innerText)">-</button>
+                    <button class="zero" onclick="appendToDisplay(this.innerText)">0</button>
+                    <button class="operator" onclick="appendToDisplay(this.innerText)">.</button>
+                    <button class="operator" onclick="appendToDisplay('^')">^</button>
+                    <button class="equal" onclick="calculateResult()">=</button>
+                </div>
+        </div>
+</body>
+<script src="app.js"></script>
+</html>
